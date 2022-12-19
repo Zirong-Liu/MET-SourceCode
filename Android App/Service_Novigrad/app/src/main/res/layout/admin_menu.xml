@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Administrator Menu"
+        android:textSize="27dp" />
+
+    <Button
+        android:id="@+id/bt2Create"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mainWelcome"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:text="Create Service"/>
+
+    <Button
+        android:id="@+id/bt2Edit"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/bt2Create"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Edit Service" />
+
+    <Button
+        android:id="@+id/bt2DeleteService"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/bt2Edit"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Delete Service" />
+
+    <Button
+        android:id="@+id/bt2DeleteEmp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/bt2DeleteService"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Delete Employee Account" />
+
+    <Button
+        android:id="@+id/bt2DeleteCus"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/bt2DeleteEmp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Delete Customer Account" />
+
+</RelativeLayout>

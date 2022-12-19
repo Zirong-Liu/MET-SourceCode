@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="100dp"
+        android:text="Welcome to Service Novigrad"
+        android:textSize="27dp" />
+
+    <EditText
+        android:id="@+id/tfFirstName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mainWelcome"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/tfLastName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tfFirstName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:hint="Last Name"/>
+
+    <EditText
+        android:id="@+id/tfEmail"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tfLastName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/tfPwd"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tfEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/tfCfPwd"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tfPwd"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password" />
+
+    <Button
+        android:id="@+id/btReg"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/rdGroup"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Register" />
+
+    <RadioGroup
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdGroup"
+        android:layout_below="@id/tfCfPwd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="1dp">"
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee"
+            android:id="@+id/rdEmp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:id="@+id/rdCus"/>
+    </RadioGroup>
+
+
+</RelativeLayout>
